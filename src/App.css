@@ -5,7 +5,15 @@
   flex-direction: row;
 color: #ffff;
 }
+.logo {
+  font-family: "Single Day";
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  font-size: 3rem;
 
+  color: #72db73;
+}
 
 
 

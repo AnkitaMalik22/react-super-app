@@ -57,7 +57,7 @@ const Form = () => {
     <div className="form">
       {/*  -----------------------FORM TITLE ------------------------ */}
       <div className="form-title-div">
-        <h1 className="form-title-text">Super app</h1>
+      <h1 className="logo">Super app</h1>
         <p className="form-title-subtext">Create your new account</p>
         <div className="signin-options-div">
           <p>Email</p>
