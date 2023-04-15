@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./Form.css";
+import { useNavigate } from "react-router-dom";
 
 const Form = () => {
+  const navigate = useNavigate();
   const [userData, setUserData] = useState({
     name: "",
     userName: "",
@@ -50,11 +52,34 @@ const Form = () => {
   const handleUserDataChange = (e) => {
     const { name, value } = e.target;
     setUserData({ ...userData, [name]: value });
-    console.log(userData);
+
+
+    
   };
 
+  const handleFormSubmit = async() => {
+
+    handleErrors();
+    if (name && userName && email && phone && check) {
+      // saving to local storage
+      localStorage.setItem("userData", JSON.stringify(userData));
+      // redirecting to home page
+      navigate("/");
+
+    }
+
+    
+    }
+
+
+
+  
+    
+
+ 
+
   return (
-    <div className="form">
+    <div className="form" >
       {/*  -----------------------FORM TITLE ------------------------ */}
       <div className="form-title-div">
       <h1 className="logo">Super app</h1>
@@ -67,7 +92,7 @@ const Form = () => {
       </div>
       {/* =========================FORM INPUTS START========================= */}
 
-      <div className="form-inputs">
+      <div className="form-inputs" >
 
         {/* -----------------------NAME INPUT ------------------------ */}
         <div className="input-div name">
@@ -140,7 +165,7 @@ const Form = () => {
           {checkError && <span className="form_error">{checkError}</span>}
         </div>
 
-        <button className="form-button" onClick={() => handleErrors()}>
+        <button className="form-button" onClick={()=>handleFormSubmit()}>
           SIGN UP
         </button>
       </div>

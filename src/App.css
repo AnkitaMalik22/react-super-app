@@ -15,6 +15,26 @@ color: #ffff;
   color: #72db73;
 }
 
+.home{
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.home-inner-div{
+width:80%;
+padding: 1rem;
+border: 1px solid red;
+display: inline-flex;
+align-items: center;
+justify-content: space-between;
+}
+.home-left{
+
+}
+.home-right{
+
+}
 
 
 

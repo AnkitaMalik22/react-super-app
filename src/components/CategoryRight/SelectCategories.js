@@ -16,7 +16,7 @@ const SelectCategories = ({
         "selectedCategories",
         JSON.stringify(selectedCategories)
       );
-      navigate("/home");
+      navigate("/");
       setSelectErr(false);
     } else {
       setSelectErr(true);
