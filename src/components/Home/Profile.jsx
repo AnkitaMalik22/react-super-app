@@ -20,7 +20,7 @@ const Profile = () => {
         setCategories(categories)
         setUser(user);
         setLoading(false)
-        console.log(categories)
+        // console.log(categories)
     }, [])
 
 
