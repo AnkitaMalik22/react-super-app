@@ -23,17 +23,18 @@ color: #ffff;
 
 .home-inner-div{
 width:80%;
+height: 80vh;
 padding: 1rem;
-border: 1px solid red;
 display: inline-flex;
 align-items: center;
 justify-content: space-between;
 }
 .home-left{
-
+  height: 100%;
 }
 .home-right{
-
+  margin-left: 5rem;
+  height: 100%;
 }
 
 

@@ -63,8 +63,8 @@ const Form = () => {
     if (name && userName && email && phone && check) {
       // saving to local storage
       localStorage.setItem("userData", JSON.stringify(userData));
-      // redirecting to home page
-      navigate("/");
+      // redirecting to categories page
+      navigate("/categories");
 
     }
 
