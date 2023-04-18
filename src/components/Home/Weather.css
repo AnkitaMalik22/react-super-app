@@ -2,16 +2,17 @@
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 1rem;
+padding: 0.6rem;
 border: 1px solid transparent;
 border-radius: 1rem;
-width: 100%;
+width: 88%;
+font-size: 0.8rem;
 
 }
 
 .weather-top{
     width: 100%;
-    padding: 0.2rem 0.7rem;
+    padding: 0rem 0.7rem;
 
     background: #FF4ADE;
     border: 1px solid transparent;
@@ -20,7 +21,7 @@ border-radius: 1rem 1rem 0 0;
     justify-content: space-around;
     align-items: center;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.4rem;
     line-height: 0;
     letter-spacing: 0.04em;
 }
@@ -32,7 +33,7 @@ border-radius: 1rem 1rem 0 0;
 }
 .weather-bottom{
     width: 100%;
-    padding:1rem 0.7rem;
+    padding: 0.2rem 0.7rem;
     background: #101744;
     border: 1px solid transparent;
 border-radius:  0 0 1rem 1rem;
@@ -59,17 +60,17 @@ letter-spacing: 0.04em;
 text-align: center;
 }
 .w-box2-txt-1{
-font-size: 3rem;
-margin: 2rem 0px;
+font-size: 1.8rem;
+margin: 1.5rem 0px;
 }
 .w-box2-txt-2{
-    line-height: 1.3rem;
+    line-height: 1rem;
     margin: 0;
 }
 .w-box2-span{
     position: relative;
     right: 0.8rem;
-    top: 1rem;
+    top: 0.8rem;
 }
 .w-box3{
     text-align: center;
@@ -92,16 +93,16 @@ margin: 2rem 0px;
     right: 0.8rem;
    
     position: relative;
-    top: 1.7rem;
+    top: 1rem;
 }
 .w-box3-span-1{
     margin-right: 0.5rem;
 }
 .w-box3-span-2{
-    margin-left: 3.3rem;
+    margin-left: 2.3rem;
 }
 .line{
     width: 0.1rem;
-    height: 3rem;
+    height: 2rem;
     background-color: #ffff;
 }

@@ -22,18 +22,24 @@ color: #ffff;
 }
 
 .home-inner-div{
-width:80%;
-height: 80vh;
+width:85%;
+height: 93vh;
 padding: 1rem;
 display: inline-flex;
 align-items: center;
 justify-content: space-between;
 }
 .home-left{
+  width: 70%;
   height: 100%;
+  display:inline-flex ;
+}
+.inner-left{
+
 }
 .home-right{
-  margin-left: 5rem;
+  width: 30%;
+  margin-left: 1rem;
   height: 100%;
 }
 

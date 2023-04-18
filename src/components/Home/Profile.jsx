@@ -40,7 +40,7 @@ const handleDeselectCategory = (id) => {
       <div className='profile-container'>
         <div className="profile">
           <div className="profile__img">
-            <img src={profileImg} alt="profile"  height={250}/>
+            <img src={profileImg} alt="profile"  height={200}/>
           </div>
           <div className="profile__info">
             <p className='user'>{user.name}</p>

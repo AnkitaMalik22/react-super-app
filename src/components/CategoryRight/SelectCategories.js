@@ -16,13 +16,13 @@ const SelectCategories = ({
         "selectedCategories",
         JSON.stringify(selectedCategories)
       );
-      navigate("/");
+      navigate("/home");
       setSelectErr(false);
     } else {
       setSelectErr(true);
     }
 
-    console.log(selectedCategories);
+    // console.log(selectedCategories);
   };
 
   return (
