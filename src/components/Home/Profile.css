@@ -2,12 +2,12 @@
     background-color: #5746EA;
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     font-family: 'Roboto';
     letter-spacing: 0.05em;
     display: inline-flex;
     line-height: 0.5rem;
-    width: 85%;
+    width: 90%;
 
 }
 

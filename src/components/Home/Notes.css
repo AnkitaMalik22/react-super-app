@@ -1,9 +1,10 @@
 .notes-container {
   background: #f1c75b;
-  width: 100%;
-  height: 59.5%;
+  width: 44%;
+  height: 90%;
   border-radius: 1rem;
-  padding: 1.5rem 1rem;
+  padding: 0.8rem;
+
   color: black;
   overflow-y: hidden;
 }
@@ -27,9 +28,9 @@
 
 
 .write-notes-btn {
-  position: absolute;
-  bottom: 15rem;
-  left: 61%;
+  position: relative;
+ top: 2rem;
+  left: 82%;
   width: 50px;
   height: 50px;
   border-radius: 50%;
