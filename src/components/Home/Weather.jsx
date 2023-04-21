@@ -16,7 +16,7 @@ const Weather = () => {
   const handleWeather = () => {
  
    
-    fetch(` http://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=Kolkata&aqi=no`)
+    fetch(` https://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=Kolkata&aqi=no`)
     .then(res => res.json())
     .then(data => setWeather(
       {
