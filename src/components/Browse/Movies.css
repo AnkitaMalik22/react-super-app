@@ -14,21 +14,19 @@
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
-margin: 0.5rem 0;
+  margin: 0.5rem 0;
   letter-spacing: 0.02em;
 
   color: #878787;
 }
 
-.movie-img{
-    border-radius: 0.6rem;
+.movie-img {
+  border-radius: 0.6rem;
 }
-.movie-img:hover{
-   
-    cursor: pointer;
-    border: 1px solid #878787;
- 
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
+.movie-img:hover {
+  cursor: pointer;
+  border: 1px solid #878787;
 
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
