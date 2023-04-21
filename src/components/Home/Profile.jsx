@@ -32,7 +32,7 @@ const handleDeselectCategory = (id) => {
 }
 
   return (
-    <div>
+    <>
 
     {
 !loading && (
@@ -69,7 +69,7 @@ const handleDeselectCategory = (id) => {
  
 )
     }
-    </div>
+    </>
   )
 }
 

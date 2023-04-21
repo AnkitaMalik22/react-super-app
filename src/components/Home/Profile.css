@@ -2,11 +2,11 @@
     background-color: #5746EA;
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
     font-family: 'Roboto';
     letter-spacing: 0.05em;
     display: inline-flex;
-    line-height: 0.5rem;
+    line-height: 0.3rem;
     width: 90%;
 
 }
@@ -24,7 +24,7 @@ font-style: normal;
 font-weight: 400;
 }
 .username{
-font-size: 1.5rem;
+font-size: 1.3rem;
 font-weight: 500;
 }
 

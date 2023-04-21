@@ -20,6 +20,7 @@ const categoriesArray = [
     color: "#FF5209",
     image: category1,
     selected: false,
+    genreId:28
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const categoriesArray = [
     color: "#D7A4FF",
     image: category2,
     selected: false,
+    genreId:18
   },
   {
     id: 3,
@@ -34,6 +36,7 @@ const categoriesArray = [
     color: "#148A08",
     image: category3,
     selected: false,
+    genreId: 10749
   },
   {
     id: 4,
@@ -41,6 +44,7 @@ const categoriesArray = [
     color: "#84C2FF",
     image: category4,
     selected: false,
+    genreId:53
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ const categoriesArray = [
     color: "#902500",
     image: category5,
     selected: false,
+    genreId:37
   },
   {
     id: 6,
@@ -55,6 +60,7 @@ const categoriesArray = [
     color: "#7358FF",
     image: category6,
     selected: false,
+    genreId:27
   },
   {
     id: 7,
@@ -62,6 +68,7 @@ const categoriesArray = [
     color: "#FF4ADE",
     image: category7,
     selected: false,
+    genreId:14
   },
   {
     id: 8,
@@ -69,6 +76,7 @@ const categoriesArray = [
     color: "#E61E32",
     image: category8,
     selected: false,
+    genreId:10402
   },
   {
     id: 9,
@@ -76,6 +84,7 @@ const categoriesArray = [
     color: "#6CD061",
     image: category9,
     selected: false,
+    genreId:878
   },
 ];
 

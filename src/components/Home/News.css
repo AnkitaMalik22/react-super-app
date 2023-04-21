@@ -1,6 +1,6 @@
 .news-container{
     width: 100%;
-    height: 97%;
+    height:97%;
    
 }
 
@@ -29,7 +29,12 @@ border-radius: 1rem 1rem 0 0;
 }
 
 .news-title-txt{
-
+font-size: 1rem;
+letter-spacing: 0.03em;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+line-height: 1.2rem;
 }
 .news-date{
 
@@ -40,6 +45,8 @@ color:  #272727;
 text-align: justify;
 height: 40%;
 padding: 1rem;
+font-size: 0.9rem;
+line-height: 1.3rem;
 border-radius:  0 0 1rem 1rem;
 }
 .news-txt{

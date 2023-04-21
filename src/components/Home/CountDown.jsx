@@ -4,16 +4,27 @@ import timeBtn from "../../assets/time-btn.png";
 import sound from "../../assets/sound.wav"
 
 const CountDown = () => {
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
+  const [hours, setHours] = useState(5);
+  const [minutes, setMinutes] = useState(8);
+  const [seconds, setSeconds] = useState(56);
   const [countDown, setCountDown] = useState(false);
   const [total, setTotal] = useState(0);
   const [timer, setTimer] = useState(null);
   const [audio] = useState(new Audio(sound));
-  const [timerDisplay, setTimerDisplay] = useState("00:00:00");
+  const [timerDisplay, setTimerDisplay] = useState("05:09:00");
+  const [timerDisplay2, setTimerDisplay2] = useState({
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
+
+  });
 
   function startTimer() {
+    setTimerDisplay2({
+      hours: hours < 10 ? "0" + hours : hours,
+      minutes: minutes < 10 ? "0" + minutes : minutes,
+      seconds: seconds < 10 ? "0" + seconds : seconds,
+    });
     let totalSeconds = hours * 3600 + minutes * 60 + seconds;
     setTotal(totalSeconds);
 
@@ -50,6 +61,15 @@ const CountDown = () => {
 
   function stopTimer() {
     clearInterval(timer);
+    setHours(0);
+    setMinutes(0);
+    setSeconds(0);
+    setTimerDisplay("00:00:00");
+    setTimerDisplay2({
+      hours: "00",
+      minutes: "00",
+      seconds: "00",
+    });
     setCountDown((prev) => !prev);
   }
 
@@ -133,7 +153,7 @@ const CountDown = () => {
               className="time-input"
               min="0"
               max="23"
-              value={hours}
+              value={countDown ? timerDisplay2.hours : hours}
               onChange={(e) => setHours(e.target.value)}
             />
             <img
@@ -158,7 +178,7 @@ const CountDown = () => {
               className="time-input"
               min="0"
               max="59"
-              value={minutes}
+              value={countDown ? timerDisplay2.minutes : minutes}
               onChange={(e) => setHours(e.target.value)}
             />
             <img
@@ -182,7 +202,7 @@ const CountDown = () => {
               className="time-input"
               min="0"
               max="59"
-              value={seconds}
+              value={countDown ? timerDisplay2.seconds : seconds}
               onChange={(e) => setHours(e.target.value)}
             />
             <img
@@ -195,7 +215,7 @@ const CountDown = () => {
         </div>
         <button
           className="start-btn"
-          onClick={() => (countDown ? stopTimer() : startTimer())}
+          onClick={() => (countDown && total > 0  ? stopTimer() : startTimer())}
         >
           {countDown ? "Stop" : "Start"}
         </button>
